@@ -1,0 +1,28 @@
+NAME:	Neil Malu
+COURSE:	Computer Architecture (CS211)
+
+PA5:
+
+I have implemented the following:
+	Direct mapped
+	FIFO
+	Write back policy
+	Write Through Policy
+
+I have not implemented the following:
+	Associative caches
+	LRU
+
+My program would pass all the test cases with direct mapped caches having a FIFO replacement policy. 
+
+Part 4:
+
+2 way associative cache, cache size = 32, block size = 4.
+Since block size = 4, bitoffset = 2.
+
+1)	Since this is a spacially localized stream, the most significant bit stays the same. In this case the tag bit is the MSB. Hence the hit ratio would be higher than case 2. 
+
+2)	Since this is a spacially localized stream, the most significant bit stays the same. However, the set bit is the MSB therefore the miss rate will significantly increase as the addresses are not spacially localized anymore. 
+
+For my program, comparing the write back and write through policies, memory reads and cache hits remain the same. However for the write back policy, cache misses decrease significantly and memory writes increase.
+
